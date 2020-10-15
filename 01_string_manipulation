@@ -1,0 +1,18 @@
+//
+//  01_string_manipulation.kt
+//  
+//
+//  Created by Jundana Al-Basyir on 15/10/20.
+//
+
+fun removeParentheses(s: String): String {
+	var text = s.replace(Regex("\\(.*?\\)"), "")
+    return text
+}
+
+fun main(){
+    var myText = "a(b(c)"
+    var result = removeParentheses(myText)
+    
+    print(result)
+}
